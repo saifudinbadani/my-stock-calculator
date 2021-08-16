@@ -23,7 +23,7 @@ function calculateResult(){
     else if(amountInvested < currentInvestedAmt) {
         var profit = currentInvestedAmt - amountInvested;
         var profitPerc = ((profit*100)/ amountInvested).toFixed(2);
-
+        outputResult.style.color = '#22C55E'
         outputResult.innerText = `Your net profit is ₹${profit} and percentage gain is ${profitPerc}%`
 
         
@@ -31,6 +31,7 @@ function calculateResult(){
     }else{
         var loss = amountInvested - currentInvestedAmt;
         var lossPerc = ((loss*100)/amountInvested).toFixed(2);
+        outputResult.style.color = '#EF4444'
         outputResult.innerText = `Your net loss is ₹${loss} and percentage loss is ${lossPerc}%`
         
     }
