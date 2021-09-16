@@ -12,7 +12,7 @@ var currentInvestedAmt = 0 ;
 
 
 function calculateResult(){
-    if(buyingPrice.value >= 0|| currentPrice.value >= 0|| quantity.value >= 0){
+    if(buyingPrice.value >= 0 && currentPrice.value >= 0 && quantity.value >= 0){
         amountInvested = Number(buyingPrice.value) *  Number(quantity.value);
         currentInvestedAmt = Number(currentPrice.value) * Number(quantity.value);
         if(buyingPrice.value == '' || currentPrice.value == '' || quantity.value == ''){
